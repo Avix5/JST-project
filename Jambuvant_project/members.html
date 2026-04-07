@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#17cf17",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112111",
+          },
+          fontFamily: {
+            display: ["Work Sans"],
+          },
+          borderRadius: { DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body class="font-display bg-background-light dark:bg-background-dark text-black dark:text-white">
+  <header
+    class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-primary/20 dark:border-primary/30">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a class="flex items-center gap-3" href="#">
+          <div class="w-12 h-100 text-primary">
+            <img src="Statics/Assets/jambuvant logo.jpg"" alt="img not found">
+            <!-- <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg> -->
+          </div>
+          <h2 class="text-xl font-bold text-gray-900 dark:text-white">Jambuvant Solar Tech</h2>
+        </a>
+        <nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="products.html">Products</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About Us</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Contact</a>
+        </nav>
+        <!-- <a class="hidden lg:inline-flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-gray-900 text-sm font-bold shadow-sm hover:bg-primary/90 transition-colors" href="#">
+                        Get a Quote
+                    </a> -->
+        <button class="lg:hidden p-2 rounded-md hover:bg-primary/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+    <div class="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">Our Team</h2>
+      <p class="mt-4 text-lg text-black/60 dark:text-white/60">
+        Meet the dedicated professionals at Jambuvant Solar Tech, committed to delivering top-quality solar solutions.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+      <div
+        class="group relative flex flex-col items-center text-center bg-white/50 dark:bg-black/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative w-32 h-32 mb-4">
+          <div class="overflow-hidden rounded-full w-full h-full">
+            <img src="Statics/members/jst_founder_profile.jpeg"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" alt="">
+          </div>
+        </div>
+        <h3 class="text-lg font-bold">Datta S. Sangule</h3>
+        <p class="text-sm text-primary font-semibold">CEO</p>
+        <!-- none -->
+        <a class="mt-2 text-black/50 dark:text-white/50 hover:text-primary transition-colors"
+          href="https://www.linkedin.com/in/jambuvant-solar-tech-89a354258/">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="group relative flex flex-col items-center text-center bg-white/50 dark:bg-black/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative w-32 h-32 mb-4">
+          <div class="overflow-hidden rounded-full w-full h-full">
+            <img src="Statics/members/ghunaji_blezzercrooped.png"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" alt="">
+          </div>
+        </div>
+        <h3 class="text-lg font-bold">Ghunaji G. Dhule</h3>
+        <p class="text-sm text-primary font-semibold">Operation Manager</p>
+        <!-- none -->
+        <a class="mt-2 text-black/50 dark:text-white/50 hover:text-primary transition-colors"
+          href="https://www.linkedin.com/in/jambuvant-solar-tech-89a354258/">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="group relative flex flex-col items-center text-center bg-white/50 dark:bg-black/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative w-32 h-32 mb-4">
+          <div class="overflow-hidden rounded-full">
+            <div class="w-full h-full overflow-hidden">
+  <img 
+    src="Statics/members/Ajay narale.jpeg"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+    alt="member"
+  >
+</div>
+            <!-- <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOqivrnKo4Qp6ihzs-lsS27Ttc-rlMbfEDxUsunS46V7eejf35_tVUTInp3jzdhpGShtaT9Vr2X0YruduXo28rx5I_32PSaqq4Umdfgq5ebgrTUggQw9f_G6gC1XyPfZGWkgEZXHf_VR9546BRM1JvtkAYlfv0htU5qX2vuPc50PXTLo-DjE3ysdrdV6uDnkkpEUM1USuJmlAd_d5XtMabzbgUzsI2oMYxT3ed3JS9NcNUPUwEby5faMONkSRDTEkbyut2NsLSIJk");'>
+            </div> -->
+            
+          </div>
+        </div>
+        <h3 class="text-lg font-bold">Ajay Narale</h3>
+        <p class="text-sm text-primary font-semibold">Finance Manager</p>
+        <a class="mt-2 text-black/50 dark:text-white/50 hover:text-primary transition-colors" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="group relative flex flex-col items-center text-center bg-white/50 dark:bg-black/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative w-32 h-32 mb-4">
+          <div class="overflow-hidden rounded-full">
+            <!-- <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAx9q2TMOgNWuM1iIaHxpn6wexVJTaJbUXmE_EK7n9btLfpcE-laoUmkO-o9JTZ9zhuT-AcB7C5y7lzzWUnXWFXOWxT2szSRjurnpi6zpa7uUKzsyVaKSm3mM0XfueuRpwXmhTdhSpTZ7QahE72EbfG75S8RGJIrxoD2nkxKI-dXzxDXCeIN3Rx5LRp442F1e2r775xy139S65jy2rvXsWEH0g_ib2L-GDPkDREQGXpYE70Vw4EYhdGM4-dOzcYnaO47RO0FFx2yL4");'>
+            </div> -->
+            <div class="w-full h-full overflow-hidden">
+  <img 
+    src="Statics/members/mahesh.jpeg"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+    alt="member"
+  >
+</div>
+          </div>
+        </div>
+
+        <!-- wastage -->
+         <h3 class="text-lg font-bold">Mahesh Bhendulkar</h3>
+        <p class="text-sm text-primary font-semibold">Sr. Technician</p>
+        <a class="mt-2 text-black/50 dark:text-white/50 hover:text-primary transition-colors" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+            </path>
+          </svg>
+        </a>
+      </div> 
+      <div
+        class="group relative flex flex-col items-center text-center bg-white/50 dark:bg-black/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative w-32 h-32 mb-4">
+          <div class="overflow-hidden rounded-full">
+            <!-- <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA8Ui81_7hlxNsKzag8JzhheKqKj3tl1nse1BATksQ6R6GR6MtnryeP1DkjgX-QYU65Dqr6kGhssS8iQ0iCFGrrSllpvy6OU4GAZclT6oh0xDaoo-RsuBhGxAGjCdyaPVCx1kJfs40AlNNnX1epRt3gM8UvDdavrDslAUf6G2Z1kYb6G3IexpI8DJ3OLIIWyqLRqZRuzCqLuEWpGZlDh6B0HCUC9SWx3TIuN2LUpIkviVXDuDRoZlkqtGOkvepYu6CkhA5NXrMp5cM");'>
+            </div> -->
+            <div class="w-full h-full overflow-hidden">
+  <img 
+    src="Statics/members/akaash shipe.jpeg"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+    alt="member"
+  >
+</div>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold">Akash Shipe</h3>
+        <p class="text-sm text-primary font-semibold">Project Engeener</p>
+        <a class="mt-2 text-black/50 dark:text-white/50 hover:text-primary transition-colors" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="group relative flex flex-col items-center text-center bg-white/50 dark:bg-black/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative w-32 h-32 mb-4">
+          <div class="overflow-hidden rounded-full">
+            <!-- <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOqtRDuSKuK8vKRr9QZV-6vei-qTKa8ZbEkT9ppymX8yLKaIB_bFKO3uNmrsmoyF5Y9-XtCjV1s4sNotu8_J0-EGppDbczp-mfPEytlQWo_O5soYS3RNFlTXThxYt4JyQU6Eimjfj1FeRp7-PEEY66feObCl3QARYxAZB0tkXkhcmzsSFm0oo7_T-2sGkHpawOy_Euh11cgQ1iAW8yIDXWGZhQ7udoJy4lAy6lLA9uhO9MjxkxihPPASMzLXHYws34TH3_idI63kA");'>
+            </div> -->
+            <div class="w-full h-full overflow-hidden">
+  <img 
+    src="Statics/members/akshay_khopallinkdin.jpeg"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+    alt="member"
+  >
+</div>
+          </div>
+        </div>
+        <h3 class="text-lg font-bold">Akshay Phapal</h3>
+        <p class="text-sm text-primary font-semibold">Marketing Manager</p>
+        <a class="mt-2 text-black/50 dark:text-white/50 hover:text-primary transition-colors" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div
+        class="group relative flex flex-col items-center text-center bg-white/50 dark:bg-black/50 p-6 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
+        <div class="relative w-32 h-32 mb-4">
+          <div class="overflow-hidden rounded-full">
+                        <div class="w-full h-full overflow-hidden">
+  <img 
+    src="Statics/members/Akshay_rathod.jpeg"
+    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+    alt="member"
+  >
+</div>
+            <!-- <div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEqQzUoimuP704qJv_5UkKvA4uMx-f5W_cmiUM4_uj4utV3tVVAKiqUdQqHdoPanTN6r7ulLaC3PjmJ4qylJkXYI_nWe7oj8k4P4hAqLN_BFTAl-8LJBS-GXsnyoyMdLZ4Vdm8xfo8yFSE4QUaVyIqafYdL05PG8JCjYR8wS6UFtNFIevFBUPdYEUdrAfj08NlIkkP05ao5PJG3jLimqXYlzDrKtpFY_VRfJDHxkD4W3KnSvZK5q3TnAyHKuJS3JBtW73weghnqpY");'>
+            </div> -->
+          </div>
+        </div>
+        <h3 class="text-lg font-bold">Akshay Rathod</h3>
+        <p class="text-sm text-primary font-semibold">Marketing Head</p>
+        <a class="mt-2 text-black/50 dark:text-white/50 hover:text-primary transition-colors" href="#">
+          <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+            </path>
+          </svg>
+        </a>
+        <!--  -->
+      </div>
+    </div>
+  </main>
+  <footer class="bg-background-light dark:bg-background-dark border-t border-black/10 dark:border-white/10">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 mb-6 md:mb-0">
+          <a class="text-sm text-black/60 dark:text-white/60 hover:text-primary transition-colors" href="index.html">Home</a>
+          <a class="text-sm text-black/60 dark:text-white/60 hover:text-primary transition-colors" href="about.html">About us</a>
+          <a class="text-sm text-black/60 dark:text-white/60 hover:text-primary transition-colors" href="members.html">Members</a>
+          <a class="text-sm text-black/60 dark:text-white/60 hover:text-primary transition-colors" href="index.html">Contact</a>
+        </div>
+        <p class="text-sm text-black/60 dark:text-white/60 text-center md:text-right">© 2024 Jambuvant Solar Tech. All
+          rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <a class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:bg-[#128C7E] transition-colors flex items-center justify-center"
+    href="#">
+    <!-- <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.357 1.849 6.075l-1.266 4.625 4.739-1.242z"></path>
+</svg> -->
+    <img src="Statics/Assets/icons8-whatsapp-48.png" alt="not found" style="height: 20px;">
+  </a>
+
+</body>
+
+</html>
